@@ -1,0 +1,57 @@
+.DataForm {
+    height: 60vh;
+    width: 65vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc; */
+    border-left: 1px solid #cecece;
+}
+
+.form{
+    height: 45vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ff3131;
+}
+
+.submit{
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: white;
+    border: 0.4px solid #212121;
+    padding: 0.6rem 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.img{
+    width: 25vw;
+    height: auto;
+}

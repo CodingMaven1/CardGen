@@ -1,0 +1,15 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.row{
+    height: inherit;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

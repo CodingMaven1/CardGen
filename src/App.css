@@ -9,3 +9,13 @@ body{
     /* background-color: #9CC0FF; */
     background-color: #cecece;
 }
+
+.app{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    height: 10vh;
+    width: 100vw;
+}

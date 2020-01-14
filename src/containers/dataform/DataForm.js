@@ -136,7 +136,7 @@ class DataForm extends Component{
       }
 
       onSubmitHandler = (event) => {
-        //   event.preventDefault();
+          event.preventDefault();
           let submitForm = {}
           for(let element in this.state.DataForm){
               submitForm[element]= this.state.DataForm[element].value;
@@ -144,6 +144,7 @@ class DataForm extends Component{
           
           axios.post('/form.json', submitForm)
           .then(response => {
+              // this.props.history.replace('/');
               console.log(response);
           })
           .catch(error => {

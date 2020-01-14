@@ -1,0 +1,11 @@
+.navlink{
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ff3131;
+}
+
+a{
+    text-decoration: none;
+}

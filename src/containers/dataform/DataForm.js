@@ -144,7 +144,7 @@ class DataForm extends Component{
           
           axios.post('/form.json', submitForm)
           .then(response => {
-              // this.props.history.replace('/');
+              this.props.history.replace('/');
               console.log(response);
           })
           .catch(error => {

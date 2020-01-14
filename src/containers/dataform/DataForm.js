@@ -144,7 +144,16 @@ class DataForm extends Component{
           
           axios.post('/form.json', submitForm)
           .then(response => {
-              this.props.history.replace('/');
+            //   this.props.history.replace('/');
+            const queryParams = [];
+            for(let i in this.state.DataForm){
+                queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.DataForm[i].value));
+            }
+            const query = queryParams.join('&');
+            this.props.history.push({
+                pathname: '/',
+                search: '?' + query
+            })
               console.log(response);
           })
           .catch(error => {

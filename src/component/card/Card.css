@@ -1,7 +1,24 @@
 .card{
     height: 35vh;
     width: 25vw;
-    background-color: #fff;
+    /* background-color: #fff; */
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 150rem;
+    position: relative;
+}
+
+.card--front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 25vw;
+    transition: all 0.8s ease;
+    background-color: #13111d;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -12,6 +29,41 @@
 .card--heading{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.card--front .card--heading:nth-child(1){
+    font-weight: 700;
+    font-size: 2.2rem;
+    background-image: linear-gradient(to right, #fdaa5a,#e9624b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card--back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 25vw;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+    background-color: #13111d;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .card--back{
+    transform: rotateY(0deg);
+}
+
+.card:hover .card--front{
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
 }
